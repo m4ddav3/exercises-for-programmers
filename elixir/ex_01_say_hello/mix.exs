@@ -7,6 +7,7 @@ defmodule Ex01SayHello.Mixfile do
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     escript: [main_module: Ex01SayHello],
      deps: deps()]
   end
 
@@ -15,7 +16,9 @@ defmodule Ex01SayHello.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger]]
+    [
+      extra_applications: [:logger]
+    ]
   end
 
   # Dependencies can be Hex packages:

@@ -3,19 +3,9 @@ defmodule Ex01SayHello do
   Documentation for Ex01SayHello.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Ex01SayHello.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def main(_) do
+    prompt_and_greet()
   end
-
 
   @doc """
   Prompt for the user's name, then print a greeting
