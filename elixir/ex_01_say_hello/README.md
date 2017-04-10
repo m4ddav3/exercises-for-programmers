@@ -1,6 +1,28 @@
 # Ex01SayHello
 
-**TODO: Add description**
+Prompt for the user's name, then greet them
+
+## Usage
+
+```
+$ iex -S mix
+> Ex01SayHello.prompt_and_greet
+What is your name? <username>
+Hello <username>, nice to meet you!
+> 
+```
+
+## CLI compilation
+
+```
+$ iex escript.build
+Compiling 1 file (.ex)                            
+Generated ex_01_say_hello app                     
+Generated escript ex_01_say_hello with MIX_ENV=dev
+$ ./ex_01_say_hello
+...
+```
+
 
 ## Installation
 
