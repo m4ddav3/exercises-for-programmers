@@ -8,11 +8,11 @@ defmodule Ex05SimpleMath do
   """
   def get_numeric_input(prompt) do
     val = IO.gets(prompt <> " ") |> String.trim_trailing("\n")
-    unless String.match?(val, ~r/^[0-9]+\z/) do
+    if String.match?(val, ~r/^[0-9]+\z/) do
+      String.to_integer(val)
+    else
       get_numeric_input(prompt)
     end
-
-    String.to_integer(val)
   end
 
   @doc """
