@@ -14,13 +14,6 @@ defmodule Ex07AreaOfARectangularRoom do
   def get_input(prompt) do
     val = IO.gets(prompt <> " ") |> String.trim_trailing
 
-    # Change this to a 'case' (match integer, match float, retry
-    #if String.match?(val, ~r/^[0-9]+(\.[0-9]+)?\z/) do
-    #  String.to_float(val)
-    #else
-    #  get_input(prompt)
-    #end
-
     case String.match?(val, ~r/^[0-9]+(\.[0-9]+)?\z/) do
       true  -> numeric(val)
       false -> get_input(prompt)
